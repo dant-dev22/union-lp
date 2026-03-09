@@ -1,0 +1,176 @@
+export const athletes = [
+  {
+    id: '1',
+    slug: 'rafa-silva',
+    name: 'Rafael Silva',
+    nickname: 'The Pitbull',
+    weightClass: 'Lightweight (70 kg)',
+    record: { wins: 12, losses: 2, draws: 0 },
+    teamRank: 'Black Belt • Head Coach',
+    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=800&fit=crop',
+    thumb: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=500&fit=crop',
+    bio: 'Rafael Silva is a BJJ black belt and former regional MMA champion. He has been training for over 15 years and leads our competition team.',
+    instagram: 'rafa_silva_bjj',
+    youtube: 'RafaSilvaMMA',
+    upcomingFights: [
+      { date: '2026-04-15', event: 'Fight Night São Paulo', opponent: 'TBD' },
+    ],
+    stats: { submissions: 8, ko: 2, decisions: 2 },
+    fightHistory: [
+      { date: '2025-11-20', opponent: 'Carlos Mendes', result: 'W', method: 'Submission' },
+      { date: '2025-08-10', opponent: 'João Santos', result: 'W', method: 'Decision' },
+    ],
+    titles: ['Regional Lightweight Champion 2024', 'BJJ Pan American Bronze'],
+    highlights: ['https://www.youtube.com/embed/dQw4w9WgXcQ'],
+  },
+  {
+    id: '2',
+    slug: 'marina-costa',
+    name: 'Marina Costa',
+    nickname: null,
+    weightClass: 'Strawweight (52 kg)',
+    record: { wins: 8, losses: 1, draws: 0 },
+    teamRank: 'Brown Belt • Pro Fighter',
+    image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=800&fit=crop',
+    thumb: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=500&fit=crop',
+    bio: 'Marina Costa represents Union BJJ & MMA in strawweight. She combines strong wrestling with a dangerous guard game.',
+    instagram: 'marinacosta_mma',
+    youtube: null,
+    upcomingFights: [
+      { date: '2026-05-01', event: 'Union BJJ & MMA Invitational', opponent: 'Ana Lima' },
+    ],
+    stats: { submissions: 5, ko: 1, decisions: 2 },
+    fightHistory: [
+      { date: '2025-12-01', opponent: 'Patricia Alves', result: 'W', method: 'Submission' },
+    ],
+    titles: ['Strawweight GP Winner 2025'],
+    highlights: [],
+  },
+  {
+    id: '3',
+    slug: 'bruno-santos',
+    name: 'Bruno Santos',
+    nickname: 'The Tank',
+    weightClass: 'Welterweight (77 kg)',
+    record: { wins: 15, losses: 3, draws: 1 },
+    teamRank: 'Black Belt • Pro Fighter',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=800&fit=crop',
+    thumb: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=500&fit=crop',
+    bio: 'Bruno Santos is a powerhouse at welterweight with a reputation for finishing fights. Multiple-time BJJ champion.',
+    instagram: 'bruno_tank_santos',
+    youtube: 'BrunoSantosBJJ',
+    upcomingFights: [],
+    stats: { submissions: 10, ko: 3, decisions: 2 },
+    fightHistory: [
+      { date: '2025-10-05', opponent: 'Diego Ferreira', result: 'L', method: 'Decision' },
+      { date: '2025-06-12', opponent: 'Lucas Oliveira', result: 'W', method: 'KO' },
+    ],
+    titles: ['BJJ World Championship Silver', 'Welterweight King of the Cage'],
+    highlights: [],
+  },
+  {
+    id: '4',
+    slug: 'leticia-oliveira',
+    name: 'Letícia Oliveira',
+    nickname: null,
+    weightClass: 'Bantamweight (61 kg)',
+    record: { wins: 5, losses: 2, draws: 0 },
+    teamRank: 'Purple Belt • Amateur',
+    image: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?w=600&h=800&fit=crop',
+    thumb: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&h=500&fit=crop',
+    bio: 'Rising star in the bantamweight division. Letícia is known for her aggressive style and submission hunting.',
+    instagram: 'leticia_oliveira_bjj',
+    youtube: null,
+    upcomingFights: [
+      { date: '2026-04-20', event: 'Amateur Night', opponent: 'TBD' },
+    ],
+    stats: { submissions: 4, ko: 0, decisions: 1 },
+    fightHistory: [],
+    titles: [],
+    highlights: [],
+  },
+]
+
+export const events = [
+  {
+    id: '1',
+    date: '2026-04-15',
+    title: 'Fight Night São Paulo',
+    location: 'Ginásio do Ibirapuera, São Paulo',
+    price: 'R$ 80 - R$ 250',
+    description: 'Main card features three Union BJJ & MMA athletes. Rafael Silva headlines in a lightweight bout.',
+    competingAthleteIds: ['1', '3'],
+    buyUrl: '#',
+  },
+  {
+    id: '2',
+    date: '2026-05-01',
+    title: 'Union BJJ & MMA Invitational',
+    location: 'Academia Union BJJ & MMA, Campinas',
+    price: 'R$ 50',
+    description: 'In-house invitational with BJJ and MMA exhibitions. Marina Costa vs Ana Lima in the main event.',
+    competingAthleteIds: ['2', '4'],
+    buyUrl: '#',
+  },
+  {
+    id: '3',
+    date: '2026-06-10',
+    title: 'Regional Championship',
+    location: 'Centro de Convenções, Campinas',
+    price: 'R$ 120',
+    description: 'Regional BJJ and MMA championship. Full team participation expected.',
+    competingAthleteIds: ['1', '2', '3', '4'],
+    buyUrl: '#',
+  },
+]
+
+export const rankingsByDivision = [
+  {
+    division: 'Lightweight (70 kg)',
+    type: 'professional',
+    belt: null,
+    athletes: [
+      { athleteId: '1', position: 1, points: 450, record: '12-2-0' },
+    ],
+  },
+  {
+    division: 'Welterweight (77 kg)',
+    type: 'professional',
+    belt: null,
+    athletes: [
+      { athleteId: '3', position: 1, points: 380, record: '15-3-1' },
+    ],
+  },
+  {
+    division: 'Strawweight (52 kg)',
+    type: 'professional',
+    belt: null,
+    athletes: [
+      { athleteId: '2', position: 1, points: 220, record: '8-1-0' },
+    ],
+  },
+  {
+    division: 'Bantamweight (61 kg)',
+    type: 'amateur',
+    belt: null,
+    athletes: [
+      { athleteId: '4', position: 1, points: 95, record: '5-2-0' },
+    ],
+  },
+  {
+    division: 'Open Weight - Black Belt',
+    type: 'bjj',
+    belt: 'black',
+    athletes: [
+      { athleteId: '1', position: 1, points: 520, record: '12-2-0' },
+      { athleteId: '3', position: 2, points: 480, record: '15-3-1' },
+    ],
+  },
+]
+
+export const siteMeta = {
+  name: 'Union BJJ & MMA',
+  description: 'Union BJJ & MMA - Equipe de Brazilian Jiu Jitsu e MMA. Atletas, eventos, rankings e notícias.',
+  baseUrl: 'https://union-bjj-mma.example.com',
+  ogImage: '/og-image.jpg',
+}
